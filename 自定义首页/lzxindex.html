@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>×ÀÃæÍøÕ¾</title>
+    <style>
+        #kw
+        {
+            font: 16px Verdana;
+            height: 1.78em;
+            padding-top: 2px;
+        }
+        #lk
+        {
+            width: auto;
+            line-height: 18px;
+            vertical-align: top;
+        }
+        form
+        {
+            position: relative;
+            z-index: 9;
+        }
+        a.menu
+        {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            padding: 0 20px;
+            line-height: 35px;
+            text-align: center;
+            float: left;
+            background: #b0c6ed;
+            margin-bottom: 1px;
+        }
+        a.menu:hover
+        {
+            background: #7cc964;
+        }
+    </style>
+
+    <script type="text/javascript" src="jquery.js"></script>
+
+     <script type="text/javascript" src="index.js"></script>
+
+</head>
+<body style="background: #fff url(bj.jpg) repeat-x; margin: 0; padding: 0px;">
+    <table style="width: 100%;">
+        <tr>
+            <td style="width: 50%; padding: 10px;">
+                <textarea id="code" cols="60" rows="10" style="width: 100%; font: 16px Verdana; line-height: 25px;
+                    padding-top: 2px"></textarea>
+            </td>
+            <td style="padding: 30px;">
+                <input id="sousuo_baidu" type="button"  value="°Ù¶ÈËÑË÷" />
+                <input id="sousuo_google" type="button"  value="Google ËÑË÷" />
+                <input id="sousuo_bing" type="button"  value="bing" />
+                <form name="f" action="/s">
+                <input  type="text" name="wd" id="kw" size="42" maxlength="100" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 0 10px;">
+                <input type="button" onclick="Preview($('#code').val())" value="ÔË ÐÐ" />
+                <input type="button" onclick="javascript:code.value+='<script type=\'text/javascript\'><\/script>'"
+                    value="²åÈëJS" />
+                <input type="button" onclick="javascript:code.value=''" value="Çå³ý" />
+                <input type="button" onclick="javascript:code.value=clzs(code.value)" value="´¦Àí×¢ÊÍ" />
+                <input type="button" onclick="javascript:code.value+='\r\n'+code.value.length" value="×Ö·ûÊý" />
+                <input type="button" onclick="javascript:code.value=Random(code.value)" value="Ëæ»ú×Ö·û" />
+                <input type="button" onclick="googlefy()" value="·­Òë" />
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 10px;">
+                <div id="googlefydiv" style="background-color: #FFFFFF; width: 100%;">
+                </div>
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="bdsug.js"></script>
+
+</body>
+</html>

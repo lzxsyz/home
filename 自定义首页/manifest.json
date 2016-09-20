@@ -1,0 +1,19 @@
+﻿{
+   "description": "自定义首页",
+   "name": "桌面网站",
+   "permissions": [  
+   "tabs",
+   "bookmarks",
+   "history",
+    "<all_urls>",
+   "*://*/*"
+   ],
+
+
+
+   "manifest_version": 2,
+   "version": "0.3",
+  "icons" : {
+    "48" : "icon48.png"
+  }
+}
