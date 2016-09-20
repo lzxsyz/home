@@ -1,1 +1,199 @@
-<h1>hello</h1>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>规则中心</title>
+	
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="author" content="CSI"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<link rel="shortcut icon" type="image/x-icon" href="https://dev.jointforce.com/icon/logo.png"/>
+
+<link rel="stylesheet" type="text/css" href="https://dev.jointforce.com/styles/base.css"  />
+<link rel="stylesheet" type="text/css" href="https://dev.jointforce.com/styles/common.css"  />
+<script type="text/javascript" src="https://dev.jointforce.com/js/lib/biz.jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="/styles/skin/lavish-I/components/jqgrid/jquery.jqgrid.css"/>
+<link rel="stylesheet" type="text/css" href="/styles/skin/lavish-I/extends/setting.css" />
+<link rel="stylesheet" type="text/css" href="/styles/extends/rulecenter/rules.css" />
+<link rel="stylesheet" type="text/css" href="/styles/extends/loginreg/loginreg.css"/>
+<style>
+
+ul, ol {
+margin:0;}
+#jchat {
+display:none;}
+body{
+background:#d8d8d8;
+}
+.settingTab li {
+    text-indent:38px;
+}
+</style>
+</head>
+<body>
+<div id="hphead">
+	<div class="hphead">
+		<div id="hplogo"></div>
+		<a style="display:none" href="javascript:;" id="hpset" onClick="SetHome(window.location)">设为首页</a>
+		<ul id="nav">
+		<li class="login"><a href="/#jumpSource" id="btn-login-show"><i class="nav_icon_login"></i>登录</a></li>
+			<li class="reg"><a target="_blank" href="/register/index"><i class="nav_icon_reg"></i>注册</a></li>
+			<li><a target="_blank" href="https://dev.jointforce.com/jetchat"><i class="nav_icon_klinfo" style="display:none"></i>手机端</a></li>
+			<li><a target="_blank" href="http://bbs.jointforce.com"><i class="nav_icon_bbs" style="display:none"></i>社区</a></li>
+	    	<li><a target="_blank" href="http://dev.jointforce.com/jfperiodical/openhome?m=d03"><i class="nav_icon_jwk" style="display:none"></i>杰微刊</a></li>
+
+			<li><span style="font-size:16px;color:#f37c08">服务热线：400-064-0003</span></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</div>
+<div id="hpheadse"></div>
+<div id="account-setting" class="settingDiv">
+  <div class="setting-tabs">
+  	<div class="rulesleft">
+ 		<div class="setting-tabs-title">规则中心</div>
+		  <ul class="">
+		      <li id="li-rule001" class="ui-state-active"><a href="#headshot">平台须知</a></li>	    
+		      <li id="li-rule002" class=""><a href="/pages/rulecenter/v2/rule002.html">发送内容规范</a></li>
+		      <li id="li-rule003" class=""><a href="/pages/rulecenter/v2/rule003.html">发包须知</a></li>
+			  <li id="li-rule004" class=""><a href="/pages/rulecenter/v2/rule004.html">接包须知</a></li>
+			  <li id="li-rule005" class=""><a href="/pages/rulecenter/v2/rule005.html">违规行为及处理制度</a></li>
+			  <li id="li-rule006" class=""><a href="/pages/rulecenter/v2/rule006.html">举报处理制度</a></li> 
+			  <li id="li-rule007" class=""><a href="/pages/rulecenter/v2/rule007.html">积分和诚信值管理办法</a></li> 
+			  <li id="li-rule008" class=""><a href="/pages/rulecenter/v2/rule008.html">发票开具规则</a></li> 
+
+			  <li id="li-rule009" class=""><a href="/pages/rulecenter/v2/coupon.html">优惠券规则</a></li> 
+
+		  </ul>
+	</div>
+  </div>
+  <div class="setting-contentDiv">
+  	<div><img src="/styles/extends/rulecenter/images/rulestoppic.jpg" /></div>
+  	<div class="spacer8"></div>
+  	<div class="spacer8"></div>
+	<div class="thisDiv" style="" id="headshot">
+		<iframe id="iframeSub" name="iframeSub" src="/pages/rulecenter/v2/rule001.html" width="100%" frameborder="no" height="3150" scrolling="no"></iframe>
+	</div>
+  </div>
+</div>
+
+
+ 
+
+<div id="footerbox">
+	<div id="footerd">
+		<div class="footer">
+			<div class="floatleft">
+				
+			    <a target="_blank" href="https://dev.jointforce.com/help/aboutus.html">关于我们</a>
+				<a target="_blank" href="https://dev.jointforce.com/rule">规则中心</a>
+				<a target="_blank" href="https://dev.jointforce.com/help/index.html">问题中心</a>
+				<a target="_self" href="javascript:void(0)" onclick="onFeedback(null,'https://dev.jointforce.com',false,'null','null','null')" >意见反馈</a>
+			</div>
+			<div class="floatright">
+				<span>Copyright &copy; 2013-<em id="nowyear">2016</em> 北京掌中无限信息技术有限公司</span>
+				<span class="pdlr4"></span>
+				<span>京ICP证041626号 | 京ICP备09083730号-8</span>
+			</div>
+		</div>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://dev.jointforce.com/fk/css/fk.api.css">
+<script type="text/javascript" src="https://dev.jointforce.com/js/i18n/i18n_zh.js"></script>
+<script type="text/javascript" src="https://dev.jointforce.com/js/lib/WdatePicker.js"></script>
+<script type="text/javascript" src="https://dev.jointforce.com/js/lib/biz.js"></script>
+<script type="text/javascript">
+	var contextPath = "";
+
+function nowYear(){
+	var year = new Date().getFullYear();
+	$("#nowyear").html(year);
+}
+
+function footResize(){
+	var h = $(window).height();
+	var minh = h-54;
+	$("body").css("min-height",minh);
+}
+function footClear(){
+	var foot = $("#footerbox");
+	var clear = $("<div>").addClass("clear");
+	foot.prev("div").append(clear).css("padding-bottom","54px");
+}
+$(function(){
+	footClear();
+	footResize();
+	nowYear();
+})
+window.onresize=function(){
+	footResize();
+};
+</script>
+<!-- feedback message begin -->
+<script type="text/javascript" src="https://dev.jointforce.com/fk/js/fk.api.js"></script>
+<div id="fk_cover"></div>
+<div id="fk_frame_div">
+	<div id="fk_frame_title">
+		<span style="float:left;color:#fff">意见反馈</span>
+		<span style="float:right;cursor: pointer; font-size:24px;" onclick="closeFeedback()">×</span>
+		<div style="clear:both"></div>
+	</div>
+	<iframe id="fk_frame" name="fk_frame" scrolling="no" src="https://dev.jointforce.com/fk/fkmsg.jsp" frameborder=0></iframe>
+</div>
+<!-- feedback message end -->
+
+
+<script type="text/javascript" src="/js/i18n/i18n_zh.js"></script>
+<script type="text/javascript" src="/js/lib/biz.js"></script>
+<script type="text/javascript" src="/js/extends/common.js"></script>
+<script type="text/javascript">
+function init(){
+	new biz.tabs({
+	    id: "#account-setting",
+	    position:"left",
+	    selected:0
+	});
+	
+	var tab_ul = $("#account-setting").find("ul");
+	var tab_li = tab_ul.removeClass().find("li").removeClass().addClass("settingTab-li");
+	tab_ul.addClass("settingTab");
+	tab_ul.find("li").eq(0).addClass("ui-state-active")
+
+	
+	function backId(){
+		var idStr = $(this).attr("id");
+			if(idStr.indexOf("-selected")>0)
+				$(this).attr("id",idStr.split("-selected")[0]);
+		}
+
+	var hash = location.hash.substring(1);
+	if(hash!=""){
+		$("#li-"+hash).find("a").trigger("click");
+	}
+	
+}
+
+$(function(){
+	if (init) {
+		init();
+	}
+});
+</script>
+</body>
+</html>
